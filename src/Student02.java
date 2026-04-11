@@ -6,6 +6,14 @@ public class Student02 {
     private int age;
     private String gender;
 
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
     public String getName() {
         return name;
     }
@@ -19,13 +27,11 @@ public class Student02 {
     }
 
     public void setAge(int age) {
-        if (age < 0 || age > 120){
-            System.out.println("The age is invalid!");
-        }
-        else {
+        if (age < 0 || age > 130){
+            System.out.println("The age is invalid");
+        }else {
             this.age = age;
         }
-
     }
 
     public String getGender() {
@@ -36,11 +42,12 @@ public class Student02 {
         this.gender = gender;
     }
 
-    public int getNum() {
-        return num;
+    public Student02(){
     }
-
-    public void setNum(int num) {
+    public Student02(String name,int age,String gender,int num){
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
         this.num = num;
     }
 }
