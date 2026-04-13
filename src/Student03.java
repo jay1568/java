@@ -4,6 +4,12 @@ public class Student03 {
     private String name;
     private int age;
     private String gender;
+    private static String schoolName;
+
+    static {
+        schoolName = "河北工程大学";
+        System.out.println("静态代码块执行了，学校名称："+schoolName);
+    }
     public void setName(String name){
         this.name = name;
     }
@@ -37,5 +43,8 @@ public class Student03 {
     public void doOther(){
         doSome();
         System.out.println("doOther");
+    }
+    public static String getSchoolName(){
+        return schoolName;
     }
 }
