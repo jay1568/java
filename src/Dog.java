@@ -3,10 +3,7 @@ package Day01.src;
 public class Dog extends Animal{
     @Override
     public void eat(){
-        System.out.println(name + "正在吃骨头");
+        System.out.println("狗正在吃骨头");
     }
 
-    public void bark(){
-        System.out.println(name + "汪汪叫");
-    }
 }

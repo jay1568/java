@@ -1,9 +1,8 @@
 package Day01.src;
 
 public class Animal {
-    String name;
 
     public void eat(){
-        System.out.println(name+"正在吃东西");
+        System.out.println("动物正在吃东西");
     }
 }
